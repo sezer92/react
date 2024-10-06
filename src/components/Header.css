@@ -1,0 +1,31 @@
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color:#444;
+}
+
+.container-fluide {
+    display: flex;
+    color: white;
+}
+
+.collapse navbar-collapse {
+    display: flex;
+    justify-content: end;
+    color: white;
+}
+
+/* Liens de navigation */
+.nav-link {
+    color: white;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Effet au survol */
+  .nav-link:hover {
+    opacity: 0.8;
+  }
+  

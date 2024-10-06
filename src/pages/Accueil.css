@@ -1,0 +1,62 @@
+/* Suppression des marges et paddings */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* S'assurer que l'image de fond couvre tout l'écran */
+  }
+  
+  header {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .overlay {
+    background-image: url('/src/assets/img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.3); /* Fond noir avec transparence */
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .accueil-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .accueil-content h1 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .accueil-content h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  
+  .accueil-content a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accueil-content a:hover {
+    background-color: #0056b3;
+  }
+  
