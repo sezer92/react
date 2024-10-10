@@ -15,18 +15,20 @@ const Portfolio = () => {
         <img src={bannerImg} alt="Background Blue" className="img-du-haut" />
       </div>
       <div className="container">
-        <h2>Portfolio</h2>
-        <p>Voici quelques-unes de mes réalisations.</p>
-
+        <div className='portfol'>
+          <h2>PORTFOLIO</h2>
+          <p>Voici quelques-unes de mes réalisations.</p>
+        </div>
         {/* Structure de grille responsive avec Bootstrap */}
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           {/* Première colonne */}
           <div className="col">
-            <div className="card h-100">
+            <div className="card h-100 text-center"> {/* Ajout du text-center */}
               <img src={freshFoodImg} className="card-img-top" alt="Fresh Food" />
               <div className="card-body">
                 <h5 className="card-title">Fresh Food</h5>
                 <p className="card-text">Réalisation d'un site avec commande en ligne.</p>
+                <button type="button" className="btn btn-outline-primary">Voir</button> {/* Ajout du bouton */}
               </div>
               <div className="card-footer">
                 <small className="text-muted">Site réalisé avec PHP et MySQL</small>
@@ -36,11 +38,12 @@ const Portfolio = () => {
 
           {/* Deuxième colonne */}
           <div className="col">
-            <div className="card h-100">
+            <div className="card h-100 text-center"> {/* Ajout du text-center */}
               <img src={restaurantAkiraImg} className="card-img-top" alt="Restaurant Akira" />
               <div className="card-body">
                 <h5 className="card-title">Restaurant Akira</h5>
                 <p className="card-text">Réalisation d'un site vitrine.</p>
+                <button type="button" className="btn btn-outline-primary">Voir</button> {/* Ajout du bouton */}
               </div>
               <div className="card-footer">
                 <small className="text-muted">Site réalisé avec WordPress</small>
@@ -50,11 +53,12 @@ const Portfolio = () => {
 
           {/* Troisième colonne */}
           <div className="col">
-            <div className="card h-100">
+            <div className="card h-100 text-center"> {/* Ajout du text-center */}
               <img src={espaceBienEtreImg} className="card-img-top" alt="Espace bien-être" />
               <div className="card-body">
                 <h5 className="card-title">Espace bien-être</h5>
                 <p className="card-text">Réalisation d'un site vitrine pour un praticien de bien-être.</p>
+                <button type="button" className="btn btn-outline-primary">Voir</button> {/* Ajout du bouton */}
               </div>
               <div className="card-footer">
                 <small className="text-muted">Site réalisé en HTML/CSS</small>

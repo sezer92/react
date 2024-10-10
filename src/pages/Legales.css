@@ -1,21 +1,90 @@
-/* Section mentions légales */
 .mentions-legales-section {
-    padding-top: 50px; /* Espace pour bien centrer la section */
-    text-align: center; /* Centrer tout le contenu */
-  }
+  background-color: #EEE; /* Couleur de fond de la page */
+  padding: 50px 0;
+  color: #444; /* Couleur du texte */
+}
 
-  /* Centrer le titre Mentions Légales avec un tiret bleu */
 .mentions-legales-section h2 {
-    font-size: 2.5rem;
-    position: relative;
-    margin-bottom: 1rem;
+  color: #1e1e1e; /* Couleur des titres */
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 32px; /* Augmentation de la taille du texte */
+  position: relative;
+}
+
+.legal h2::after {
+  content: '';
+  display: block;
+  width: 200px; /* Largeur du trait bleu */
+  height: 4px; /* Épaisseur du trait bleu */
+  background-color: #0d6efd; /* Couleur bleue du trait */
+  margin: 10px auto 0; /* Centrage du trait */
+}
+
+strong {
+  font-size: 50px;
+}
+
+
+.accordion-button {
+  background-color: white; /* Fond des boutons de l'accordion */
+  color: #1e1e1e; /* Couleur du texte des boutons */
+  font-weight: 600;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-button:focus {
+  box-shadow: none; /* Supprimer la bordure de focus */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f8f9fa; /* Changer la couleur quand l'accordion est ouvert */
+  color: #1e1e1e;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.accordion-header {
+  font-size: 18px;
+}
+
+.accordion-body {
+  font-size: 16px;
+  color: #444; /* Couleur du texte dans le corps */
+  padding: 20px;
+}
+
+footer.footer {
+  background-color: #dfdcdc;
+  padding: 40px 0;
+  color: #1e1e1e;
+}
+
+footer .text-center {
+  margin-top: 20px;
+}
+
+footer .container {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .mentions-legales-section h2 {
+    font-size: 28px; /* Taille ajustée sur petits écrans */
   }
 
-  .mentions-legales-section h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #0d6efd; /* Bleu pour le tiret */
-    margin: 0.5rem auto 0; /* Centrer le tiret sous le texte */
+  .accordion-body {
+    font-size: 14px;
   }
+
+  .accordion-button {
+    padding: 10px;
+  }
+}

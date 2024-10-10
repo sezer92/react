@@ -1,2 +1,24 @@
+.container {
+    padding: 100px;
+}
 
-  
+.portfol {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.portfol::after {
+    content: "";
+    display: block;
+    width: 200px; /* Largeur du trait */
+    height: 4px; /* Hauteur du trait */
+    background-color: #0d6efd; /* Couleur bleue */
+    margin: 10px auto 0 auto; /* Espacement et centrage */
+  }
+  .img-du-haut {
+    height: 150px; /* Hauteur fixe */
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+    object-fit: cover; /* Cette propriété permet de redimensionner l'image pour qu'elle remplisse son conteneur sans distorsion */
+    object-position: center; /* Centre l'image dans le conteneur */
+    image-rendering: auto; /* Pour garantir que l'image soit bien rendue et nette */
+}

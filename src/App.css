@@ -1,16 +1,28 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
   background-color: #EEE;
   color: #444;
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; /* Pour s'assurer que toutes les dimensions sont bien calculées */
+  overflow-x: hidden; /* Empêche le débordement horizontal */
 }
 h1 h2 h3 h4 h5 {
   color: #1e1e1e;
+  font-weight: 600;
 }
 
 strong {
   color: black;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400; /* Par défaut pour le texte normal */
+  
 }
 
 body, html {
@@ -18,3 +30,10 @@ body, html {
   padding: 0;
   height: 100%; /* S'assurer que l'image de fond couvre tout l'écran */
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  
+}
+

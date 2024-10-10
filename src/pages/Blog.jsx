@@ -14,13 +14,15 @@ import seoImg from '../assets/img/blog/seo.jpg';
 const Blog = () => {
     return (
         <section className='blog-section'>
-            <div className='header-img'>
+            <div className='img-container'>
                 {/* Utilisation de l'image importée */}
                 <img src={bannerImg} alt="Background Blue" className="img-du-haut" />
             </div>
             <div className='container-blog'>
-                <h2>Blog</h2>
+            <div className="blog-header">
+                <h2>BLOG</h2>
                 <p>Retrouvez ici quelques articles sur le développement web.</p>
+            </div>
 
                 {/* Ajout des 6 cartes dans la grille */}
                 <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">

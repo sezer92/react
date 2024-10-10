@@ -1,76 +1,110 @@
-.footer {
-    background-color: #EEE;
-    color: black;
-    padding: 20px 0;
+/* Footer général */
+footer.footer {
+    background-color: #dfdcdc;
+    color: #1e1e1e;
+    padding: 40px 0;
 }
 
-.footer h5 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+footer h5 {
+    font-size: 18px;
+    color: #1e1e1e;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
-.footer p, .footer ul {
-    margin-bottom: 1rem;
+footer ul {
+    color: #1e1e1e;
 }
 
-.footer .social-icons a {
-    display: inline-block;
-    margin-right: 10px;
-    color: #000;
-    text-decoration: none;
-}
+.icone {
+    display: flex;
+    gap: 15px; /* Ajoute un espace entre les icônes */
+    align-items: center;
+    justify-content: start; /* Pour que les icônes soient alignées à gauche */
+    margin-top: 10px; /* Ajuste l'espacement au-dessus des icônes */
+  }
+  
+  .icone a {
+    color: #1e1e1e; /* Couleur des icônes */
+  }
+  
+  .icone a:hover {
+    color: #0d6efd; /* Couleur au survol */
+  }
+  
 
-.footer .social-icons a:hover {
-    color: #007bff;
-}
-
-.footer ul {
-    list-style-type: none;
+footer ul {
+    list-style: none;
     padding: 0;
 }
 
-.footer ul li {
-    margin-bottom: 0.5rem;
+.col {
+    padding-bottom: 30px;
 }
 
-.footer ul li a {
-    color: #007bff;
+footer a {
+    color: #1e1e1e;
     text-decoration: none;
+    font-size: 14px;
 }
 
-.footer ul li a:hover {
-    text-decoration: underline;
+footer a:hover {
+    color: rgba(255, 255, 255, 0.8);
 }
 
-.text-center {
-    background-color: #1e1e1e;
-    color: white;
-    padding: 10px 0;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer .list-unstyled li {
+    margin-bottom: 5px;
 }
 
-/* Bouton "Retour en haut" */
-.back-to-top {
+/* Ajout du bouton pour revenir en haut */
+footer .scroll-top-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #0d6efd;
-    color: white;
+    background-color: #298eff;
+    color: #1e1e1e;
+    border: none;
     padding: 10px 15px;
     border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
-    font-size: 24px;
-    opacity: 0.7;
-    transition: opacity 0.3s ease, background-color 0.3s ease;
-  }
-  
-  /* Changement de couleur et d'opacité au survol */
-  .back-to-top:hover {
-    background-color: #298eff;
-    opacity: 1;
-  }
-  
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer .scroll-top-btn:hover {
+    background-color: #0d6efd;
+}
+
+
+/* Conteneur fluide pour la section Copyright */
+.footer-copyright {
+    background-color: #1e1e1e;
+    color: white;
+    width: 100vw; /* Largeur totale */
+    height: 60px;
+    margin-left: calc(-50vw + 50%); /* Pour garantir la pleine largeur sans marges */
+}
+
+/* Responsiveness pour petits écrans */
+@media (max-width: 720px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer .col {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer .col ul {
+        text-align: center;
+    }
+
+    .footer .icone {
+        justify-content: center; /* Centre les icônes */
+    }
+
+    .footer-copyright {
+        margin-left: 0; /* Supprimer le calcul sur mobile */
+        width: 100%; /* Largeur totale en mobile */
+    }
+}
